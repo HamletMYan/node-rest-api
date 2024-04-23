@@ -5,7 +5,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(__dirname + '/public'))
 const router = require("./router/index");
 
-console.log(34343434);
 app.use("/", router);
-
+console.log("hii")
 app.listen(8080);
